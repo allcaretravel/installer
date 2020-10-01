@@ -1,21 +1,22 @@
 {
-    "name": "act/module-installer",
+    "name": "act/installer",
     "type": "composer-plugin",
     "license": "MIT",
+    "description": "ACT module Composer library installer",
     "autoload": {
         "psr-4": {
-            "Act\\ModuleInstaller\\": "src/"
+            "Act\\Installer\\": "src/"
         }
     },
     "extra": {
-        "class": "Act\\ModuleInstaller\\ModuleInstallerPlugin"
+        "class": "Act\\Installer\\InstallerPlugin"
     },
     "require-dev": {
         "mockery/mockery": "~1.0",
         "phpunit/phpunit": "~6.0"
     },
     "require": {
-        "composer-plugin-api": "^2.0",
+        "composer-plugin-api": "^1.0 || ^2.0",
         "php": "^7.3",
         "composer/composer": "dev-master"
     }

@@ -5,9 +5,9 @@ use PHPUnit\Framework\TestCase;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
-use Joshbrw\LaravelModuleInstaller\LaravelModuleInstaller;
+use Joshbrw\LaravelInstaller\LaravelInstaller;
 
-class ModuleInstallerTest extends TestCase
+class InstallerTest extends TestCase
 {
     protected $io;
     protected $composer;
@@ -25,7 +25,7 @@ class ModuleInstallerTest extends TestCase
             'get' => $this->composer,
         ])->shouldReceive('getExtra')->byDefault();
 
-        $this->test = new LaravelModuleInstaller(
+        $this->test = new LaravelInstaller(
             $this->io, $this->composer
         );
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Act\ModuleInstaller;
+namespace Act\Installer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class ModuleInstaller extends LibraryInstaller
+class Installer extends LibraryInstaller
 {
     const DEFAULT_ROOT = "act";
 
