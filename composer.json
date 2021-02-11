@@ -17,7 +17,7 @@
     },
     "require": {
         "composer-plugin-api": "^1.0 || ^2.0",
-        "php": "^7.3",
+        "php": "^7.4|^8.0",
         "composer/composer": "dev-master"
     }
 }
